@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserID: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="ID" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserPW: "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_user_pw"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="PW" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/b_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserID : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_user_id_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserPW : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_user_pw_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
